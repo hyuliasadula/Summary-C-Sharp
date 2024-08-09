@@ -26,27 +26,50 @@ o	"No! {М}" - където M е сумата, която не достига
          */
         static void Main(string[] args)
         {
+            Console.Write("Lilly Age: ");
             int lillyAge =int.Parse(Console.ReadLine());
-            double washingMachinePrice=double.Parse(Console.ReadLine());  
+
+            Console.Write("Washing Machine Price: ");
+            double washingMachinePrice=double.Parse(Console.ReadLine());
+
+            Console.Write("Toy Price: ");
             int toyPrice=int.Parse(Console.ReadLine());
 
             int toysCount = 0;
             int moneyCount = 0;
             int moneyCountby10 = 0;
+            int moneyCountby10Total = 0;
+            int brotherMoney = 0;
+            int soldToys = 0;
 
             for (int age = 1; age <= lillyAge; age++)
             {
                 if (age % 2 == 0)
                 {
                     moneyCount++;
-                    moneyCountby10 = age*10;
-                    Console.WriteLine(moneyCountby10);
+                    // 10lv -1 for the brother
+                    moneyCountby10+=10;
+                    moneyCountby10Total += moneyCountby10;
+                    //the money the brother tooks every even year -> 1lv
+                    brotherMoney++;
 
                 }
                 else
                 {
                     toysCount++;
+                    soldToys += toyPrice;
                 }
+            }
+
+            double totalMoneyCollected = moneyCountby10Total + soldToys - brotherMoney;
+            if (totalMoneyCollected > washingMachinePrice)
+            {
+                Console.WriteLine($"Yes! {Math.Abs(totalMoneyCollected-washingMachinePrice):f2}");
+            }
+            else
+            {
+                double absolute = Math.Abs(washingMachinePrice - totalMoneyCollected);
+                Console.WriteLine($"No! {absolute:f2}");
             }
         }
     }
