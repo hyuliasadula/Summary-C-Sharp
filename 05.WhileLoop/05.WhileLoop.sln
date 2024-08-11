@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.Coins", "12.Coins\12.Coi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.Cake", "13.Cake\13.Cake.csproj", "{FAA806F7-675B-413D-A6A2-48353C42F167}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.Moving", "14.Moving\14.Moving.csproj", "{29651B41-D9E6-4340-BBD8-F152EEBA18DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{FAA806F7-675B-413D-A6A2-48353C42F167}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAA806F7-675B-413D-A6A2-48353C42F167}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAA806F7-675B-413D-A6A2-48353C42F167}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29651B41-D9E6-4340-BBD8-F152EEBA18DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29651B41-D9E6-4340-BBD8-F152EEBA18DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29651B41-D9E6-4340-BBD8-F152EEBA18DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29651B41-D9E6-4340-BBD8-F152EEBA18DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
