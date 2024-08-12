@@ -21,6 +21,6 @@ namespace _16.MultiplicationTable
                     Console.WriteLine($"{first} * {second} = {first * second}");
                 }
             }
-        }
+        } 
     }
 }
