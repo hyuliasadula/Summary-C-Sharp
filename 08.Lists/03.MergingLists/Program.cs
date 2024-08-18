@@ -23,7 +23,7 @@ namespace _03.MergingLists
             List<int> result = new List<int>();
 
             MergingNumbers(firstList, secondList, result);
-
+            
             
         }
 

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.GaussTrick", "02.GaussTr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.MergingLists", "03.MergingLists\03.MergingLists.csproj", "{BFF3BA34-867A-4021-9598-B5C755B70D16}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.ListOfProducts", "04.ListOfProducts\04.ListOfProducts.csproj", "{F42132D5-E930-4D67-AF31-90CA0C531B6C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{BFF3BA34-867A-4021-9598-B5C755B70D16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFF3BA34-867A-4021-9598-B5C755B70D16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFF3BA34-867A-4021-9598-B5C755B70D16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F42132D5-E930-4D67-AF31-90CA0C531B6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F42132D5-E930-4D67-AF31-90CA0C531B6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F42132D5-E930-4D67-AF31-90CA0C531B6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F42132D5-E930-4D67-AF31-90CA0C531B6C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
