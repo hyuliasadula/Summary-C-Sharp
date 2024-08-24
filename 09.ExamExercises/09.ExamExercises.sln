@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.Reception", "04.Receptio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.ArrayModifier", "05.ArrayModifier\05.ArrayModifier.csproj", "{9C380E19-C1BF-42A8-B3B7-AACE7CA4B5B7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.Numbers", "06.Numbers\06.Numbers.csproj", "{F201220C-EFDB-4E50-B629-F72BB2BC4EBC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{9C380E19-C1BF-42A8-B3B7-AACE7CA4B5B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C380E19-C1BF-42A8-B3B7-AACE7CA4B5B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C380E19-C1BF-42A8-B3B7-AACE7CA4B5B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F201220C-EFDB-4E50-B629-F72BB2BC4EBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F201220C-EFDB-4E50-B629-F72BB2BC4EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F201220C-EFDB-4E50-B629-F72BB2BC4EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F201220C-EFDB-4E50-B629-F72BB2BC4EBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
