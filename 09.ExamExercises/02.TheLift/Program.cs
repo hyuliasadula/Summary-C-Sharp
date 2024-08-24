@@ -44,8 +44,9 @@ When there is no more available space left on the lift, or there are no more peo
             int maximumPeople = 4;
 
                                 //ex 4
-            for (int i = 0; i < currentStateOfLift.Count; i++)
-            { // 0 0 0 0
+            for (int i = 0; i < currentStateOfLift.Count; i++) 
+            { 
+                // 0 0 0 0
                 if (currentStateOfLift[i] < 4 && peopleWaiting > 0)
                 {
                     while (currentStateOfLift[i] != 4 && peopleWaiting > 0)
