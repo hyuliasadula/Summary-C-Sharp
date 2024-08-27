@@ -36,7 +36,6 @@ namespace _02.Songs
             public string Name { get; set; }
             public string Time { get; set; }
 
-           
         }
         static void Main(string[] args)
         {
