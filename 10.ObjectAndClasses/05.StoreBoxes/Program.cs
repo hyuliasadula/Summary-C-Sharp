@@ -110,11 +110,11 @@ end
     }
 }
 /*How the code above works - source ChatGPT
- * 
+ *  
  // Bubble Sort: Manually sort the boxes by PriceForBox in descending order
 for (int i = 0; i < boxes.Count - 1; i++)
 {
-    for (int j = 0; j < boxes.Count - i - 1; j++)
+    for (int j = 0; j < boxes.Count - i - 1; j++) 
     {
         if (boxes[j].PriceForBox < boxes[j + 1].PriceForBox)
         {
