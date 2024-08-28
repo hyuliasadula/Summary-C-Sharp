@@ -28,11 +28,22 @@ namespace _03.Students
 
         Input                                       Output
 
-        John Smith 15 Sofia             Sofia John Smith is 15 years old.Linda Bridge is 16 years old.
-        Peter Ivanov 14 Plovdiv
+        John Smith 15 Sofia             John Smith is 15 years old.
+        Peter Ivanov 14 Plovdiv         Linda Bridge is 16 years old.
         Linda Bridge 16 Sofia
         Simon Stone 12 Varna
         end
+        Sofia 
+
+
+
+John Smith 15 Sofia
+Peter Ivanov 14 Plovdiv
+Linda Bridge 16 Sofia
+Simon Stone 12 Varna
+end
+Sofia
+
 
          */
 
@@ -52,9 +63,9 @@ namespace _03.Students
             while (true) 
             {
                 string[] currentStudent = Console.ReadLine().Split(' ').ToArray();
-                if (currentStudent[0] == "end")
+                if (currentStudent[0].ToLower() == "end")
                 {
-                    
+
                     break;
                 }
                 string firstName = currentStudent[0];
@@ -64,28 +75,22 @@ namespace _03.Students
 
                 Student student = new Student();
                 student.FirstName = firstName;
-                student.FirstName = lastName;
+                student.LastName = lastName;
                 student.Age = age;
                 student.HomeTown = hometown;
 
                 students.Add(student);
             }
             string cityName = Console.ReadLine();
-            while (true)
-            {
+            
                 foreach (Student student in students)
                 {
                     if (student.HomeTown == cityName)
                     {
                         Console.WriteLine($"{student.FirstName} {student.LastName} is {student.Age} years old.");
                     }
-                    else
-                    {
-                        break;
-                    }
+                    
                 }
-            }
-
         }
     }
 }
