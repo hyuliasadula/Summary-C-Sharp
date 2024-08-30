@@ -39,7 +39,6 @@ end
          */
         static void Main(string[] args)
         {
-            //You must read the input, until you receive the "end" command. It will be in following format: "{type}/{brand}/{model}/{horse power / weight}"
 
             List<Car> cars = new List<Car>();
             List<Truck> trucks = new List<Truck>();
