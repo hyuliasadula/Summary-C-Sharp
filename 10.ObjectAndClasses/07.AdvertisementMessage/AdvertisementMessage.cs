@@ -6,7 +6,6 @@ namespace _07.AdvertisementMessage
 {
     internal class AdvertisementMessage
     { 
-        // Predefined parts of the message
         private string[] phrases = {
             "Excellent product.",
             "Such a great product.",
