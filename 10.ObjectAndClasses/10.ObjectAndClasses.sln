@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.RandomizeWords", "01.RandomizeWords\01.RandomizeWords.csproj", "{D77E7FE7-CE77-416B-B9F6-6449BDBC56B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.RandomizeWords", "01.RandomizeWords\01.RandomizeWords.csproj", "{D77E7FE7-CE77-416B-B9F6-6449BDBC56B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.Songs", "02.Songs\02.Songs.csproj", "{752C468D-3283-4A64-87F4-F855F5D7F9D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.Songs", "02.Songs\02.Songs.csproj", "{752C468D-3283-4A64-87F4-F855F5D7F9D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.Students", "03.Students\03.Students.csproj", "{7B9F33D1-E48A-44D9-99DC-B15E9CE18002}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.Students", "03.Students\03.Students.csproj", "{7B9F33D1-E48A-44D9-99DC-B15E9CE18002}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.Students_2.0", "04.Students_2.0\04.Students_2.0.csproj", "{28BED437-0BC9-4A94-B2DF-DDA5CB5DC653}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04.Students_2.0", "04.Students_2.0\04.Students_2.0.csproj", "{28BED437-0BC9-4A94-B2DF-DDA5CB5DC653}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.StoreBoxes", "05.StoreBoxes\05.StoreBoxes.csproj", "{7AEDA634-342F-46FF-8557-05BF029069FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05.StoreBoxes", "05.StoreBoxes\05.StoreBoxes.csproj", "{7AEDA634-342F-46FF-8557-05BF029069FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00.LearningObjectAndClasses", "00.LearningObjectAndClasses\00.LearningObjectAndClasses.csproj", "{ECCB73A2-F30A-43E1-82E6-30912D6C3C20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "00.LearningObjectAndClasses", "00.LearningObjectAndClasses\00.LearningObjectAndClasses.csproj", "{ECCB73A2-F30A-43E1-82E6-30912D6C3C20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.VehicleCatalogue", "06.VehicleCatalogue\06.VehicleCatalogue.csproj", "{F4DFBD81-0492-49AA-9ACE-AE7FB0099234}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{ECCB73A2-F30A-43E1-82E6-30912D6C3C20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECCB73A2-F30A-43E1-82E6-30912D6C3C20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECCB73A2-F30A-43E1-82E6-30912D6C3C20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4DFBD81-0492-49AA-9ACE-AE7FB0099234}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4DFBD81-0492-49AA-9ACE-AE7FB0099234}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4DFBD81-0492-49AA-9ACE-AE7FB0099234}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4DFBD81-0492-49AA-9ACE-AE7FB0099234}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
