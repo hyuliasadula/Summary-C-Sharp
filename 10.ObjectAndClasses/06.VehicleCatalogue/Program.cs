@@ -77,7 +77,7 @@ end
                     trucks.Add(truck);
                 }
             }
-
+             
             //Catalog object with the lists of cars and trucks
             Catalog catalog = new Catalog(cars, trucks);
 
