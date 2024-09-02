@@ -47,74 +47,90 @@ end of assignment
         {
             int countOfTeams = int.Parse(Console.ReadLine());
 
+            // List to store all the teams
             List<Teams> team = new List<Teams>();
 
+            // Registering teams
             for (int i = 0; i < countOfTeams; i++)
             {
+                // Input for team creation: "creator-teamName"
                 string[] teamNames = Console.ReadLine().Split("-").ToArray();
                 string teamCreator = teamNames[0];
                 string teamName = teamNames[1];
 
+                // Check if the team name already exists
                 if (team.Any(t => t.TeamName == teamName))
                 {
                     Console.WriteLine($"Team {teamName} was already created!");
                 }
+                // Check if the creator is already a creator of another team
                 else if (team.Any(t => t.Creator == teamCreator))
                 {
                     Console.WriteLine($"{teamCreator} cannot create another team!");
                 }
                 else
                 {
+                    // Creating a new team
                     Teams newTeam = new Teams(teamCreator, teamName);
                     team.Add(newTeam);
                     Console.WriteLine($"Team {teamName} has been created by {teamCreator}!");
                 }
             }
 
+            // Adding members to teams
             string input;
             while ((input = Console.ReadLine()) != "end of assignment")
             {
+                // Input for adding members: "user->teamName"
                 string[] teamNames = input.Split("->").ToArray();
                 string userJoiningTeam = teamNames[0];
                 string teamName = teamNames[1];
 
+                // Finding the team by name
                 Teams existingTeam = team.FirstOrDefault(t => t.TeamName == teamName);
-                bool userIsMember = team.Any(t => t.Members.Contains(userJoiningTeam)) 
+                // Check if the user is already a member or a creator of any team
+                bool userIsMember = team.Any(t => t.Members.Contains(userJoiningTeam))
                     || team.Any(t => t.Creator == userJoiningTeam);
 
+                // If the team does not exist
                 if (existingTeam == null)
                 {
                     Console.WriteLine($"Team {teamName} does not exist!");
                 }
+                // If the user is already in a team or is a creator of a team
                 else if (userIsMember)
                 {
                     Console.WriteLine($"Member {userJoiningTeam} cannot join team {teamName}!");
                 }
                 else
                 {
+                    // Adding the user to the team members
                     existingTeam.Members.Add(userJoiningTeam);
                 }
             }
 
+            // Separate valid teams (with members) and disbanded teams (no members)
             var validTeams = team.Where(t => t.Members.Count > 0)
-                                 .OrderByDescending(t => t.Members.Count)
-                                 .ThenBy(t => t.TeamName)
+                                 .OrderByDescending(t => t.Members.Count) // Sort by member count (descending)
+                                 .ThenBy(t => t.TeamName)               // Then by team name (ascending)
                                  .ToList();
 
             var disbandedTeams = team.Where(t => t.Members.Count == 0)
-                                     .OrderBy(t => t.TeamName)
+                                     .OrderBy(t => t.TeamName)          // Sort by team name (ascending)
                                      .ToList();
 
+            
             foreach (var t in validTeams)
             {
                 Console.WriteLine(t.TeamName);
                 Console.WriteLine($"- {t.Creator}");
-                foreach (var member in t.Members.OrderBy(m => m))
+                foreach (var member in t.Members.OrderBy(m => m))       // Sort members by name (ascending)
                 {
                     Console.WriteLine($"-- {member}");
                 }
             }
 
+            // Printing disbanded teams
             Console.WriteLine("Teams to disband:");
             foreach (var t in disbandedTeams)
             {
